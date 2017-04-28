@@ -1,23 +1,22 @@
-﻿
  <!DOCTYPE html> 
 <html lang="en">
 <head>
 
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="http://www.laitai.mn/assets/themes/Meow/css/normalize.css" rel="stylesheet" type="text/css" />
-<link href="http://www.laitai.mn/assets/themes/Meow/style.css" rel="stylesheet" type="text/css">
-<link href="http://www.laitai.mn/assets/themes/Meow/css/media.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="normalize.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="media.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn. bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  
-<script type="text/javascript" src="http://www.laitai.mn/assets/themes/Meow/js/jquery.js"></script>
-<script type="text/javascript" src="http://www.laitai.mn/assets/themes/Meow/js/modernizr.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="modernizr.js"></script>
 <script type="text/javascript">
-var page_url ='1116134195143806';
+var page_url ='MiniiSuljeeOfficial';
 var baseUrl = 'http://www.laitai.mn/';
 var facebook_appID = '248073262266265';
 var user_check = '248073262266265';
 </script>
-<script type="text/javascript" src="http://www.laitai.mn/assets/themes/Meow/js/functions.js"></script>
+<script type="text/javascript" src="functions.js"></script>
 
 
 </head>
@@ -43,7 +42,6 @@ var user_check = '248073262266265';
 
 		 
 			<div class="quiz-activity-section iframetrack"  id="content_start"  style="display:none">
-				<h2 class="quiz-main-title">Таны профайл-руу хамгийн сүүлд орсон 3 хүн</h2>
 				<div id="result"></div>
 
 
@@ -52,16 +50,13 @@ var user_check = '248073262266265';
 				 
 					
 					<div class="quiz_img">
-						<img src="http://www.laitai.mn/uploads/1493026555p.jpg2104800150.jpg" alt="Таны профайл-руу хамгийн сүүлд орсон 3 хүн"/>
-					</div>
+						<center><iframe frameborder="0" width="600" height="800" src="http://mglmarketer.com/appfun/?wp_quiz_id=161"></iframe>	
+			</center>		</div>
 				 
 					<div id="quizForm">
 						<div class="mainGame" id="mainQuiz">
 							<div id="quiz-contianer">
-								<div class="quiz-action">
-									<button type="button" data-appID="56" data-url="http://www.laitai.mn/home/app/56" class="m-b-20 btnPlay btn" name="submit" id="btnSubmit"> <img src='http://www.laitai.mn/assets/f_logo_with_white_back.png' / style="margin-right: 10px"><span>Login with Facebook </span> <i class="fa fa-play" aria-hidden="true"></i></button>
-								 
-								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -76,7 +71,7 @@ var user_check = '248073262266265';
  
 			   <div align="center" class="iframe_wrap iframe" style=" " id="checkl">
                 <div style="font-size: 22px; padding: 10px;">Like дарж цааш үргэлжүүлнэ үү.</div>
-                <div style="width: 100px; height: 25px; overflow: hidden;" class="fb-like" data-href="https://www.facebook.com/1116134195143806" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+                <div style="width: 100px; height: 25px; overflow: hidden;" class="fb-like" data-href="https://www.facebook.com/MiniiSuljeeOfficial" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
 
 
 
@@ -89,17 +84,12 @@ var user_check = '248073262266265';
  
 		 <script>
  	
-
-
-
-            if(localStorage.getItem("page_1116134195143806") == 'true'){
-
+            if(localStorage.getItem("page_MiniiSuljeeOfficial") == 'true'){
                    $("#content_start").show();
                		 $("#checkl").hide();
             }
             
      
-
           (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
            if (d.getElementById(id)) return;
@@ -122,7 +112,6 @@ var user_check = '248073262266265';
 <div id="fb-root"></div>
 
 <script type="text/javascript">
-
 var site_Name ='Funny app ';
 var app_Name = 'Таны профайл-руу хамгийн сүүлд орсон 3 хүн';
 var app_ID = '56';
@@ -150,15 +139,12 @@ var	v1_info = '';
 var	user_photos = '';
 var jsonString = '';
 var accessToken ='';
-
 $(".btnPlay").attr("disabled", true);
-
 function doQuiz(){
 	setTimeout(function(){setLoaderStatus('Профайл мэдээлэл татаж байна ...')},1500);
 	setTimeout(function(){setLoaderStatus('Үр дүнг боловсруулж байна ...')},2500);
 	setTimeout(function(){ createQuiz() },3500);
 }
-
 function login_done(){
     FB.api('/me?fields=name,id,first_name,last_name,gender',function(res){ 
      user_name = res.name;
@@ -170,23 +156,18 @@ function login_done(){
  
 	get_friends();
 }
-
 function done_friends(a,b) {
 	v1_friends = a;
 	v1_info = b;
  
-
-
 	top_frds = select_top_frirends(v1_friends, 10);
 	data1 = array_random(top_frds);
 	data2 = array_random(top_frds);
 	data3 = array_random(top_frds);
 	data4 = array_random(top_frds);
 	data5 = array_random(top_frds);
-
  
 	friend_id = data1;
-
 	FB.api(
     "/"+data1+"?fields=id,about,age_range,picture, email,first_name,gender", 
     function (response) {
@@ -195,11 +176,7 @@ function done_friends(a,b) {
       }
     } 
 );
-
-
-
   var v1_fr_info1 = Array(); 
-
 FB.api(
   '/me/photos',
   'GET',
@@ -209,49 +186,34 @@ FB.api(
   	var i=0;
       	obj = response['data'];
         for(x in obj){
-
         var photo_id= obj[x]['id'];
-
  
-
         	    FB.api(
 						  '/'+photo_id+'/',
 						  'GET',
 						  {"fields":"picture,images,link"},
 						  function(response) {
 						    			
-
 						    				var obj=response['images'];
-
 						  		 
 										  for(x in obj){
-
 										  	if(obj[x]['height']=='225')
 										  	{
-
 										  		 
 										 
 											v1_fr_info1[i]=obj[x]['source'];
-
 											 i++;
 										  	}
-
 										  }
-
 						  }
 						);
         	   
         }
-
  
   }
 );
-
-
  
-
 user_photos=v1_fr_info1;
-
 	friend_name = v1_info[data1];
 	friend2_id = data2;
 	friend2_name = v1_info[data2];
@@ -262,7 +224,6 @@ user_photos=v1_fr_info1;
 	friend5_id = data5;
 	friend5_name = v1_info[data5];
 }
-
 function createQuiz(){
         var uid = user_id;
         var u_name = user_name;
@@ -281,20 +242,12 @@ function createQuiz(){
  
 console.log(user_photos);
 user_photos.forEach(myFunction);
-
-
 function myFunction(item, index, arr) {
   window.jsonString=window.jsonString+item+"||";
-
 }
  
-
 var myJsonString = JSON.stringify(user_photos);
-
 		 
-
-
-
 		 
 		$.ajax({
 		dataType: 'json',
